@@ -1,0 +1,133 @@
+.main-combine-words-template{
+    width: 100%;
+    padding: 20px 0;
+}
+.main-combine-words-title{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.main-combine-words-title h1{
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+.dark_mode .main-combine-words-title h1 {
+    color: #fff;
+}
+.dark_mode .main-combine-words-template{
+    background-color: #000;
+}
+.main-combine-words-title p{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 15px;
+}
+.dark_mode .main-combine-words-title p{
+    color: #fff;
+}
+.main-combine-words-wrapper{
+    width: 80%;
+    background-color: rgb(214 214 214 / 10%);
+    padding: 20px;
+    border-radius: 4px;
+    margin: auto;
+    border: 1px solid #d6d6d6;
+
+}
+.combine-words-input{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.combine-words-input textarea{
+    width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    outline: none;
+}
+.combine-words-btn{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.combine-words-btn button{
+    font-size: 12px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: rgb(38, 170, 38);
+    background: linear-gradient(118deg, rgb(61 29 122) 20%, rgb(29 152 148) 50%);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 2px;
+}
+.combine-words-output textarea{
+    width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    outline: none;
+}
+.dark_mode .main-combine-words-box textarea{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+.main-combine-words-box textarea::placeholder {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 880px) {
+    .main-combine-words-wrapper{
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+@media only screen and (max-width: 680px) {
+    .combine-words-input{
+
+    }
+    .combine-words-input textarea{
+        padding: 10px;
+        max-height: 150px;
+        min-height: 150px;
+    }
+    .combine-words-output textarea{
+        width: 100%;
+        padding: 10px;
+        max-height: 150px;
+        min-height: 150px;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+    .combine-words-input{
+        flex-wrap: wrap;
+    }
+    .combine-words-btn {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .combine-words-input textarea {
+        padding: 10px;
+        max-height: 100px;
+        min-height: 100px;
+    }
+    .combine-words-output{
+        text-align: center;
+    }
+}
